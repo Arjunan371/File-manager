@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="File_manager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bam-zm-IDh">
+                                <rect key="frame" x="86.666666666666686" y="317" width="220" height="218.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="VGf-6c-aNl"/>
+                                    <constraint firstAttribute="height" constant="220" id="nCw-Rj-si5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM8-UY-vuS">
+                                <rect key="frame" x="20" y="566" width="353" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V2t-MG-Wus"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzK-Pc-O6h">
+                                <rect key="frame" x="20" y="626" width="353" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dGT-bc-s7l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bam-zm-IDh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="13X-y1-YSR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iM8-UY-vuS" secondAttribute="trailing" constant="20" id="4Qf-a1-k7W"/>
+                            <constraint firstItem="iM8-UY-vuS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="61N-le-GPI"/>
+                            <constraint firstItem="yzK-Pc-O6h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fmv-8k-ACO"/>
+                            <constraint firstItem="bam-zm-IDh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IUn-GU-9iN"/>
+                            <constraint firstItem="iM8-UY-vuS" firstAttribute="top" secondItem="bam-zm-IDh" secondAttribute="bottom" constant="30" id="cXB-G7-1Se"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yzK-Pc-O6h" secondAttribute="trailing" constant="20" id="ysl-g9-XRg"/>
+                            <constraint firstItem="yzK-Pc-O6h" firstAttribute="top" secondItem="iM8-UY-vuS" secondAttribute="bottom" constant="30" id="zAF-sr-o1Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bam-zm-IDh" id="arC-9B-DXB"/>
+                        <outlet property="label1" destination="iM8-UY-vuS" id="mua-iE-Gx1"/>
+                        <outlet property="label2" destination="yzK-Pc-O6h" id="dt2-fW-Jjo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paperplane.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
